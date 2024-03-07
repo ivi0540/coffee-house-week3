@@ -1,0 +1,55 @@
+@media (min-width: 380px) and (max-width: 767px) {
+    :root {
+        --modalWindowWidth: 342px;
+        --modalWindowHeight: 626px;
+    }
+
+    .modalWindow {
+        padding: 16px;
+    }
+
+    .leftPanelInModalWindow {
+        display: none;
+    }
+
+    .rightPanelInModalWindow {
+        width: 310px;
+    }
+
+    .descriptionCoffeeInMenu {
+        height: auto;
+    }
+
+    .containerForDrinkSize {
+        flex-wrap: wrap;
+        height: auto;
+        width: 241px;
+    }
+
+    .elem3 {
+        margin-top: 6px;
+    }
+
+    .containerForAdditives {
+        flex-wrap: wrap;
+        height: auto;
+        width: 257px;
+    }
+
+    .containerForTotal {
+        width: auto;
+    }
+
+    .containerForNote {
+        margin-top: 21px;
+        width: auto;
+    }
+
+    .textBlock {
+        width: 286px;
+    }
+
+    .bntClose {
+        width: 310px;
+    }
+}

@@ -1,0 +1,47 @@
+@media (min-width: 768px) and (max-width: 1439px) {
+    :root {
+        --modalWindowWidth: 688px;
+        --modalWindowHeight: 626px;
+    }
+
+    .rightPanelInModalWindow {
+        width: 343px;
+    }
+
+    .containerForDrinkSize {
+        flex-wrap: wrap;
+        height: auto;
+
+        width: 242px;
+    }
+
+    .elem3 {
+        margin-top: 6px;
+    }
+
+    .containerForAdditives {
+        flex-wrap: wrap;
+        height: auto;
+
+        width: 258px;
+    }
+
+    .containerForTotal {
+        width: 326px;
+        margin-top: 20px;
+    }
+
+    .containerForNote {
+        margin-top: 18px;
+        width: auto;
+    }
+
+    .textBlock {
+        width: 318px;
+    }
+
+    .bntClose {
+        margin-top: 32px;
+        width: 326px;
+    }
+}

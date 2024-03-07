@@ -1,0 +1,376 @@
+@media screen and (min-width: 380px) and (max-width: 767px) {
+    :root {
+        --widthMainDiv: 380px;
+
+        --widthVideo: 348px;
+        --heightVideo: 552px;
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    .cofeMenuLink {
+        display: none;
+    }
+
+    .burgerButton {
+        display: flex;
+    }
+
+    .mainDiv {
+        padding: 20px 16px;
+    }
+
+    .centerImage {
+        padding: 60px 16px;
+        height: auto;
+
+        background-position-x: -404px;
+        background-position-y: 8px;
+        background-size: 327%;
+    }
+
+    .centerTitle {
+        height: auto;
+
+        color: var(--textLight);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 115%;
+    }
+
+    .italicEnjoy {
+        color: var(--textAccent);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 115%;
+    }
+
+    .centerContent {
+        width: auto;
+        height: auto;
+    }
+
+    .centerText {
+        height: auto;
+    }
+
+    .favoriteCoffee {
+        height: auto;
+    }
+
+    .favoriteCoffeeTitle {
+        height: auto;
+
+        color: var(--textDark);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .italicFavorite {
+        color: var(--textAccent);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .leftBtnSlider,
+    .rigthBtnSlider {
+        display: none;
+    }
+
+    .imageToSlider {
+        width: 348px;
+        height: 348px;
+        background-image: url(images/coffee-slider-1M.png);
+    }
+
+    .imageToSlider2 {
+        width: 348px;
+        height: 348px;
+        background-image: url(images/coffee-slider-2M.png);
+    }
+
+    .imageToSlider3 {
+        width: 348px;
+        height: 348px;
+        background-image: url(images/coffee-slider-3M.png);
+    }
+
+    .destinationToSlider {
+        height: auto;
+    }
+
+    .about {
+        margin-top: -8px;
+    }
+
+    .description {
+        height: auto;
+
+        color: var(--textDark);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .italicAbout {
+        color: var(--textAccent);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .slallImage {
+        display: none;
+    }
+
+    .leftPanel,
+    .rigthPanel {
+        width: 100%;
+        height: 590px;
+    }
+
+    .rigthPanel {
+        margin-top: 40px;
+    }
+
+    .image1,
+    .image4 {
+        background-position-x: -154px;
+    }
+
+    .imagesContainer {
+        flex-direction: column;
+    }
+
+    .titleMobileApp {
+        height: auto;
+
+        color: var(--textDark);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .italicDownload {
+        color: var(--textAccent);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .mobileApp {
+        height: auto;
+        margin-top: 100px;
+
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .leftContainer {
+        width: auto;
+        height: auto;
+    }
+
+    .descriptionMobileApp {
+        height: auto;
+    }
+
+    .btnPanel {
+        width: auto;
+        height: auto;
+
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .GooglePlay {
+        margin-top: 20px;
+    }
+
+    .rigthImage {
+        width: 348px;
+        height: 348px;
+
+        margin-top: 40px;
+
+        background-image: url(images/mobile-screensM.png);
+    }
+
+    .titleContacts {
+        height: auto;
+
+        color: var(--textLight);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .italicCoffeeTime {
+        color: var(--textAccent);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .contacts {
+        margin-top: 100px;
+        padding: 60px 16px;
+    }
+
+    .contactsContainer {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .contactsLeftPanel {
+        width: auto;
+        height: auto;
+    }
+
+    .contactsRightPanel {
+        width: auto;
+        height: auto;
+
+        margin-top: 40px;
+    }
+
+    .webSites {
+        width: 204px;
+        height: 60px;
+
+        margin-top: 40px;
+    }
+
+    /* styles for Menu Coffee 380px */
+
+    .mainMenuCoffee {
+        padding: 20px 16px;
+    }
+
+    .titleAndMenuSection {
+        height: auto;
+    }
+
+    .titleMenu {
+        width: auto;
+        height: auto;
+
+        color: var(--textDark);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .italicmAzing {
+        color: var(--textAccent);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .menuSection {
+        width: 343px;
+        height: 46px;
+        margin-top: 39px;
+    }
+
+    .coffeeMemu {
+        /* height: 2144px; */
+        margin-top: 40px;
+        padding-left: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(1, 310px);
+        grid-template-rows: repeat(4, 506px);
+        gap: 0;
+        row-gap: 40px;
+
+        /* overflow: hidden; */
+    }
+
+    .scrollButton {
+        display: flex;
+
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: 1px solid var(--borderDark);
+    }
+
+    .scrollButton:hover {
+        background-color: var(--textAccent);
+        cursor: pointer;
+    }
+
+    .scrollButton div {
+        width: 24px;
+        height: 24px;
+
+        background-image: url(../Home/images/refresh.png);
+    }
+
+    .cofeMenuImage2 {
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        margin-left: 6px;
+        background-image: url(images/coffee-cup.png);
+    }
+
+    .slide1,
+    .slide2,
+    .slide3 {
+        width: 350px;
+    }
+
+    .videoToMainPage {
+        right: 450px;
+        bottom: 120px;
+    }
+}

@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+
+:root {
+    --widthMainDiv: 1440px;
+
+    /* textColors */
+    --textDark: #403F3D;
+    --textLight: #E1D4C9;
+    --textAccent: #B0907A;
+
+    /* backgroundColors */
+    --backgroundBody: #E1D4C9;
+    --backgroundContainer: #665F55;
+    --backgroundBackdrop: rgba(64, 63, 61, 0.80);
+
+    /* borderColors */
+    --borderLight: #C1B6AD;
+    --borderDark: #665F55;
+}
+
+
+body {
+    background-color: var(--backgroundBody);
+}
+
+
+.mainMenuCoffee {
+    width: var(--widthMainDiv);
+
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    background-color: var(--backgroundBody);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+
+    margin-bottom: 20px;
+}
+
+.flexSbStretch {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.flexCeCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.flexSbCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logoHeader {
+    width: 100px;
+    background-image: url(images/logo.png);
+}
+
+.navHeader {
+    width: 456px;
+}
+
+.itemNav {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.cofeMenuLink {
+    width: 72px;
+}
+
+.cofeMenuTitle {
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.cofeMenuImage {
+    width: 20px;
+    height: 20px;
+
+    margin-top: -7px;
+    background-image: url(images/coffee-cup.png);
+}
+
+.menuSection {
+    width: 361px;
+    height: 46px;
+
+    /* background-color: brown; */
+}
+
+
+
+
+
+
+
+
+
+
+.coffeeMemu {
+    height: 1052px;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: repeat(4, 506px);
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+.priceCoffee {
+    height: 30px;
+    margin-top: 12px;
+
+    /* color: var(--text-dark, #403F3D); */
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+
+
+
+.contacts {
+    height: 450px;
+    margin-top: 100px;
+    padding: 100px;
+    background-color: var(--backgroundContainer);
+    border-radius: 40px;
+}
+
+.contactsContainer {
+    width: 1160px;
+    height: 250px;
+}
+
+.contactsLeftPanel {
+    width: 530px;
+    height: 250px;
+}
+
+.flexColumnSb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleContacts {
+    height: 150px;
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.italicCoffeeTime {
+    color: var(--textAccent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.webSites {
+    width: 204px;
+    height: 60px;
+}
+
+.flexSbCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.webSitesIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+
+    border: 1px solid var(--borderLight);
+}
+
+.twitter,
+.instagram,
+.facebook {
+    width: 24px;
+    height: 24px;
+}
+
+.twitter {
+    background-image: url(images/twitter.png);
+}
+
+.instagram {
+    background-image: url(images/instagram.png);
+}
+
+.facebook {
+    background-image: url(images/facebook.png);
+}
+
+.contactsRightPanel {
+    width: 530px;
+    height: 186px;
+}
+
+.flexColumnStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contactUs {
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+
+    margin-bottom: 40px;
+}
+
+.address {
+    width: 182px;
+    height: 28px;
+}
+
+.flexStartStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.iconAddress,
+.iconPhoneNumber,
+.iconWorkingHours {
+    width: 20px;
+    height: 20px;
+}
+
+.iconAddress {
+    background-image: url(images/pin-alt.png);
+}
+
+.iconPhoneNumber {
+    background-image: url(images/phone.png);
+}
+
+.iconWorkingHours {
+    background-image: url(images/clock.png);
+}
+
+.addressText,
+.phoneNumberText,
+.workingHoursText {
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    margin-left: 10px;
+}
+
+.phoneNumber {
+    width: 177px;
+    height: 24px;
+
+    margin-top: 16px;
+}
+
+.workingHours {
+    width: 264px;
+    height: 24px;
+
+    margin-top: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--textDark);
+}
+
+.link:hover {
+    text-decoration: underline;
+}

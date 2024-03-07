@@ -1,0 +1,154 @@
+@media screen and (min-width: 768px) and (max-width: 768px) {
+    :root {
+        --widthMainDiv: 768px;
+
+        /* video */
+        --widthVideo: 688px;
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    .cofeMenuLink {
+        display: none;
+    }
+
+    .centerImage {
+        padding: 100px 60px;
+        /* background-image: url(images/coffee.png); */
+        background-position-x: -321px;
+        background-position-y: 17px;
+        background-size: 190%;
+    }
+
+    .burgerButton {
+        display: flex;
+    }
+
+    .favoriteCoffeeTitle {
+        height: 150px;
+    }
+
+    .description {
+        height: 450px;
+    }
+
+    .about {
+        margin-top: 175px;
+    }
+
+    .slallImage {
+        display: none;
+        height: 430px;
+    }
+
+    .leftPanel,
+    .rigthPanel {
+        width: 688px;
+        height: 630px;
+    }
+
+    .imagesContainer {
+        flex-direction: column;
+    }
+
+    .image1 {
+        background-image: url(images/about-1_2.png);
+    }
+
+    .image4 {
+        background-image: url(images/about-4_2.png);
+    }
+
+    .image1,
+    .image4 {
+        background-position-x: -18px;
+        background-position-y: -70px;
+    }
+
+    .mobileApp {
+        height: 1042px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    .leftContainer {
+        width: auto;
+    }
+
+    .rigthImage {
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+
+    .contacts {
+        height: 735px;
+        margin-top: 100px;
+        padding: 100px;
+        background-color: var(--backgroundContainer);
+        border-radius: 40px;
+    }
+
+    .contactsContainer {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .contactsRightPanel {
+        margin-top: 101px;
+    }
+
+    .titleMenu {
+        width: auto;
+        height: auto;
+    }
+
+    .menuSection {
+        margin-top: 40px;
+    }
+
+    .titleAndMenuSection {
+        height: auto;
+    }
+
+    .coffeeMemu {
+        /* overflow: hidden; */
+        padding-left: 15px;
+        grid-template-columns: repeat(2, 310px);
+        grid-template-rows: repeat(2, 506px);
+    }
+
+    .scrollButton {
+        display: flex;
+
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: 1px solid var(--borderDark);
+    }
+
+    .scrollButton div {
+        width: 24px;
+        height: 24px;
+
+        background-image: url(../Home/images/refresh.png);
+    }
+
+    .cofeMenuImage2 {
+        display: block;
+
+        width: 20px;
+        height: 20px;
+
+        margin-left: 6px;
+        background-image: url(images/coffee-cup.png);
+    }
+
+    .videoToMainPage {
+        right: 400px;
+    }
+}

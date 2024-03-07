@@ -1,0 +1,1172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+
+:root {
+    --widthMainDiv: 1440px;
+
+    /* textColors */
+    --textDark: #403F3D;
+    --textLight: #E1D4C9;
+    --textAccent: #B0907A;
+
+    /* backgroundColors */
+    --backgroundBody: #E1D4C9;
+    --backgroundContainer: #665F55;
+    --backgroundBackdrop: rgba(64, 63, 61, 0.80);
+
+    /* borderColors */
+    --borderLight: #C1B6AD;
+    --borderDark: #665F55;
+
+    /* video */
+    --widthVideo: 1360px;
+    --heightVideo: 644px;
+}
+
+.flexSbStretch {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.flexSbStart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flexStartStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexCenterStart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexSbCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCeCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumnSb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexColumnStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mainDiv {
+    width: var(--widthMainDiv);
+
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    background-color: var(--backgroundBody);
+
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--backgroundBody);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+
+    margin-bottom: 20px;
+}
+
+.logoHeader {
+    width: 100px;
+    background-image: url(images/logo.png);
+}
+
+.navHeader {
+    width: 456px;
+}
+
+.cofeMenuLink {
+    width: 72px;
+}
+
+.centerImage {
+    /* width: 1360px; */
+    /* height: 644px; */
+
+    position: relative;
+    right: var(--widthVideo);
+
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 40px;
+
+    /* background-color: aquamarine; */
+
+    /* background-image: url(images/coffee.png); */
+}
+
+.containerForVideoAndText {
+    width: var(--widthVideo);
+
+    border-radius: 40px;
+
+    display: grid;
+    grid-template-columns: var(--widthVideo) var(--widthVideo);
+    grid-template-rows: var(--heightVideo);
+    margin-bottom: 100px;
+
+    overflow: hidden;
+}
+
+.videoToMainPage {
+    position: relative;
+    bottom: 50px;
+}
+
+.favoriteCoffee {
+    height: 799px;
+
+    /* background-color: aquamarine; */
+}
+
+.favoriteCoffeeTitle {
+    height: 75px;
+
+    /* background-color: blue; */
+
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.leftBtnSlider,
+.rigthBtnSlider {
+    width: 60px;
+    height: 60px;
+
+    margin-top: 330px;
+    border-radius: 50px;
+
+    border: 1px solid var(--textDark);
+}
+
+.leftBtnSlider {
+    margin-left: 4px;
+}
+
+.rigthBtnSlider {
+    margin-right: 4px;
+}
+
+.sliderContainer {
+    width: 480px;
+    height: 684px;
+
+    margin-top: 40px;
+
+    overflow: hidden;
+}
+
+.sliderLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: calc(480px*3);
+    position: relative;
+    right: calc(480px*0);
+
+    transition: all 1s;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    width: 480px;
+}
+
+
+
+
+.about {
+    /* height: 1325px; */
+    margin-top: 100px;
+
+    /* background-color: blueviolet; */
+}
+
+.mobileApp {
+    height: 630px;
+    margin-top: 100px;
+
+    /* background-color: chartreuse; */
+}
+
+.contacts {
+    /* height: 450px; */
+    margin-top: 100px;
+    padding: 100px;
+    background-color: var(--backgroundContainer);
+    border-radius: 40px;
+}
+
+.contactsContainer {
+    /* width: 1160px; */
+    /* height: 250px; */
+
+    /* background-color: aqua; */
+}
+
+.contactsLeftPanel {
+    width: 530px;
+    height: 250px;
+
+    /* background-color: bisque; */
+}
+
+.contactsRightPanel {
+    width: 530px;
+    height: 186px;
+
+    /* background-color: antiquewhite; */
+}
+
+.titleContacts {
+    height: 150px;
+
+    /* background-color: coral; */
+
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.italicCoffeeTime {
+    color: var(--textAccent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.webSitesIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+
+    border: 1px solid var(--borderLight);
+}
+
+.webSites {
+    width: 204px;
+    height: 60px;
+
+    /* background-color: chocolate; */
+}
+
+.twitter,
+.instagram,
+.facebook {
+    width: 24px;
+    height: 24px;
+}
+
+.twitter {
+    background-image: url(images/twitter.png);
+}
+
+.instagram {
+    background-image: url(images/instagram.png);
+}
+
+.facebook {
+    background-image: url(images/facebook.png);
+}
+
+.contactUs {
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+
+    margin-bottom: 40px;
+}
+
+
+.address {
+    width: 182px;
+    height: 28px;
+
+    /* background-color: aqua; */
+}
+
+.phoneNumber {
+    width: 177px;
+    height: 24px;
+
+    margin-top: 16px;
+
+    /* background-color: aqua; */
+}
+
+.iconAddress,
+.iconPhoneNumber,
+.iconWorkingHours {
+    width: 20px;
+    height: 20px;
+}
+
+.iconAddress {
+    background-image: url(images/pin-alt.png);
+}
+
+.iconPhoneNumber {
+    background-image: url(images/phone.png);
+}
+
+.iconWorkingHours {
+    background-image: url(images/clock.png);
+}
+
+.addressText,
+.phoneNumberText,
+.workingHoursText {
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    margin-left: 10px;
+}
+
+.workingHours {
+    width: 264px;
+    height: 24px;
+
+    margin-top: 20px;
+
+    /* background-color: aqua; */
+}
+
+.cofeMenuTitle {
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.cofeMenuImage {
+    width: 20px;
+    height: 20px;
+
+    margin-top: -7px;
+    background-image: url(images/coffee-cup.png);
+}
+
+.itemNav {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.centerContent {
+    /* background-color: aqua; */
+
+    width: 530px;
+    height: 444px;
+}
+
+.centerTitle {
+    height: 228px;
+
+    /* background-color: blueviolet; */
+
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.italicEnjoy {
+    color: var(--textAccent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.centerText {
+    height: 72px;
+    margin-top: 40px;
+
+    color: var(--textLight);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.italicFavorite {
+    color: var(--textAccent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+
+.centerBtn {
+    width: 200px;
+    height: 64px;
+    margin-top: 40px;
+
+    background-color: var(--backgroundBody);
+
+    border-radius: 30px;
+
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.leftArrow,
+.rigthArrow {
+    width: 24px;
+    height: 24px;
+}
+
+.leftArrow {
+    background-image: url(images/arrow-left.png);
+}
+
+.rigthArrow {
+    background-image: url(images/arrow-right.png);
+}
+
+.leftBtnSlider:hover,
+.rigthBtnSlider:hover {
+    background-color: var(--backgroundContainer);
+    cursor: pointer;
+}
+
+.imageToSlider,
+.imageToSlider2,
+.imageToSlider3 {
+    height: 480px;
+}
+
+.imageToSlider {
+    background-image: url(images/coffee-slider-1.png);
+}
+
+.imageToSlider2 {
+    background-image: url(images/coffee-slider-2.png);
+}
+
+.imageToSlider3 {
+    background-image: url(images/coffee-slider-3.png);
+}
+
+
+
+
+.titleToSlider {
+    height: 30px;
+
+    margin-top: 20px;
+
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.destinationToSlider {
+    height: 48px;
+
+    margin-top: 16px;
+
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.priceToSlider {
+    height: 30px;
+
+    margin-top: 16px;
+
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.containerToControls {
+    width: 144px;
+    height: 4px;
+
+    margin-top: 40px;
+}
+
+.control1,
+.control2,
+.control3 {
+    width: 40px;
+    height: 4px;
+
+    background-color: var(--borderLight);
+
+    border-radius: 5px;
+}
+
+.control1:hover,
+.control2:hover,
+.control3:hover {
+    cursor: pointer;
+}
+
+.controlProgress1,
+.controlProgress2,
+.controlProgress3 {
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+
+    background-color: var(--borderDark);
+}
+
+
+.description {
+    height: 225px;
+
+    color: var(--textDark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 599;
+    line-height: 125%;
+
+    /* background-color: aquamarine; */
+}
+
+.italicAbout {
+    color: var(--textAccent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 599;
+    line-height: 125%;
+}
+
+.imagesContainer {
+    /* height: 1060px; */
+    margin-top: 40px;
+
+    /* background-color: aqua; */
+}
+
+.leftPanel,
+.rigthPanel {
+    width: 660px;
+    height: 1060px;
+
+    /* background-color: blue; */
+}
+
+.bigImage {
+    height: 590px;
+}
+
+.slallImage {
+    height: 430px;
+}
+
+.bigImage,
+.slallImage {
+    border-radius: 20px;
+}
+
+.image1 {
+    background-image: url(images/about-1.png);
+}
+
+.image2 {
+    background-image: url(images/about-2.png);
+}
+
+.image3 {
+    background-image: url(images/about-3.png);
+}
+
+.image4 {
+    background-image: url(images/about-4.png);
+}
+
+.leftContainer {
+    width: 630px;
+    height: 342px;
+}
+
+.rigthImage {
+    width: 630px;
+    height: 630px;
+
+    background-image: url(images/mobile-screens.png);
+}
+
+.titleMobileApp {
+    height: 150px;
+
+    color: var(--textDark);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.italicDownload {
+    color: var(--textAccent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.descriptionMobileApp {
+    height: 48px;
+    margin-top: 40px;
+
+    color: var(--textDark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.btnPanel {
+    width: 420px;
+    height: 64px;
+
+    margin-top: 40px;
+}
+
+.AppStore,
+.GooglePlay {
+    width: 200px;
+    height: 64px;
+
+    padding-top: 12px;
+    padding-left: 21px;
+    border-radius: 30px;
+
+    border: 1px solid var(--textDark);
+}
+
+.contentConntainer {
+    width: 121px;
+    height: 36px;
+}
+
+.appleLogo,
+.GooglePlayLogo {
+    width: 36px;
+    height: 36px;
+}
+
+.appleLogo {
+    background-image: url(images/iconApple.png);
+}
+
+.GooglePlayLogo {
+    background-image: url(images/iconGooglePlay.png);
+}
+
+.testContainer {
+    width: 78px;
+    height: 35px;
+}
+
+.titleDown {
+    width: 77px;
+
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.nameMarket {
+    width: 92px;
+    margin-top: 1px;
+
+    color: var(--textDark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--textDark);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.phonelink {
+    text-decoration: none;
+    color: var(--textLight);
+}
+
+.mapLink {
+    text-decoration: none;
+    color: var(--textLight);
+}
+
+
+.burgerButton {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--borderDark);
+    margin-top: 7px;
+    border-radius: 25px;
+}
+
+.openBurger {
+    width: 16px;
+    height: 9px;
+
+    border-top: 2px solid var(--borderDark);
+    border-bottom: 2px solid var(--borderDark);
+}
+
+.closeBurger {
+    width: 14px;
+    height: 14px;
+    background-image: url(images/iconClose.png);
+}
+
+#iconBurger {
+    transition: all 1s;
+}
+
+.burgerButton:hover {
+    background-color: var(--textAccent);
+    cursor: pointer;
+}
+
+.scrollButton {
+    display: none;
+}
+
+.scrollButton:hover {
+    background-color: var(--textAccent);
+    cursor: pointer;
+}
+
+.titleAndMenuSection {
+    height: 236px;
+}
+
+.flexColumnSbCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleMenu {
+    width: 800px;
+    height: 150px;
+    color: var(--textDark);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.italicmAzing {
+    color: var(--text-accent, #B0907A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.menuSection {
+    width: 361px;
+    height: 46px;
+}
+
+
+.itemCoffee,
+.itemTea,
+.itemDessert {
+    height: 46px;
+    background-color: var(--backgroundBody);
+    border-radius: 25px;
+
+    border: 1px solid var(--borderDark);
+
+    padding: 8px;
+}
+
+.itemCoffee:hover,
+.itemTea:hover,
+.itemDessert:hover {
+    cursor: pointer;
+}
+
+.actionCoffee {
+    background-color: var(--backgroundContainer);
+}
+
+.itemCoffee {
+    width: 115px;
+}
+
+.itemTea {
+    width: 90px;
+}
+
+.itemDessert {
+    width: 124px;
+}
+
+.flexStartCenter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoCoffee,
+.logoTea,
+.logoDessert {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+
+    background-color: var(--borderLight);
+}
+
+.logoCoffeeIcon,
+.logoTeaIcon,
+.logoDessertIcon {
+    width: 16px;
+    height: 18px;
+}
+
+.logoCoffeeIcon {
+    background-image: url(../Home/images/iconCoffee.png);
+}
+
+.logoTeaIcon {
+    background-image: url(../Home/images/iconTea.png);
+}
+
+.logoDessertIcon {
+    background-image: url(../Home/images/iconDessert.png);
+}
+
+.titleCoffee,
+.titleTea,
+.titleDessert {
+    color: var(--textDark);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    margin-left: 8px;
+}
+
+.actionTitleCoffee {
+    color: var(--textLight);
+}
+
+.coffeeMemu {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: repeat(2, 506px);
+    gap: 40px;
+}
+
+.blockMenuCoffee {
+    border: 1px solid var(--borderLight);
+    border-radius: 40px;
+    color: var(--textDark);
+}
+
+.blockMenuCoffee:hover {
+    background-color: var(--backgroundContainer);
+    color: var(--textLight);
+    cursor: pointer;
+}
+
+.imageCoffee {
+    height: 310px;
+
+    border-radius: 40px;
+}
+
+.deliciousContainer {
+    padding: 20px;
+}
+
+.descriptionCoffeeInMenu {
+    height: 72px;
+    margin-top: 12px;
+
+    /* color: var(--text-dark, #403F3D); */
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.priceCoffee {
+    height: 30px;
+    margin-top: 12px;
+
+    /* color: var(--text-dark, #403F3D); */
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.imageCoffee1 {
+    background-image: url(../Home/images/coffee-1.png);
+}
+
+.imageCoffee2 {
+    background-image: url(../Home/images/coffee-2.png);
+}
+
+.imageCoffee3 {
+    background-image: url(../Home/images/coffee-3.png);
+}
+
+.imageCoffee4 {
+    background-image: url(../Home/images/coffee-4.png);
+}
+
+.imageCoffee5 {
+    background-image: url(../Home/images/coffee-5.png);
+}
+
+.imageCoffee6 {
+    background-image: url(../Home/images/coffee-6.png);
+}
+
+.imageCoffee7 {
+    background-image: url(../Home/images/coffee-7.png);
+}
+
+.imageCoffee8 {
+    background-image: url(../Home/images/coffee-8.png);
+}
+
+.imageTea1 {
+    background-image: url(../Home/images/tea-1.png);
+}
+
+.imageTea2 {
+    background-image: url(../Home/images/tea-2.png);
+}
+
+.imageTea3 {
+    background-image: url(../Home/images/tea-3.png);
+}
+
+.imageTea4 {
+    background-image: url(../Home/images/tea-4.png);
+}
+
+.imageDessert1 {
+    background-image: url(../Home/images/dessert-1.png);
+}
+
+.imageDessert2 {
+    background-image: url(../Home/images/dessert-2.png);
+}
+
+.imageDessert3 {
+    background-image: url(../Home/images/dessert-3.png);
+}
+
+.imageDessert4 {
+    background-image: url(../Home/images/dessert-4.png);
+}
+
+.imageDessert5 {
+    background-image: url(../Home/images/dessert-5.png);
+}
+
+.imageDessert6 {
+    background-image: url(../Home/images/dessert-6.png);
+}
+
+.imageDessert7 {
+    background-image: url(../Home/images/dessert-7.png);
+}
+
+.imageDessert8 {
+    background-image: url(../Home/images/dessert-8.png);
+}
+
+.mainMenuCoffee {
+    width: var(--widthMainDiv);
+
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    background-color: var(--backgroundBody);
+}
+
+.titleCoffeeInMenu {
+    height: 30px;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.cofeMenuImage2 {
+    display: none;
+}
+
+.burgerMenu {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+
+    border: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+.bgBlack {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.8;
+
+    margin: 0;
+    padding: 0;
+}

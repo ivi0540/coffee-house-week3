@@ -1,0 +1,5 @@
+@media (min-width: 380px) and (max-width: 767px) {
+    .burger768px {
+        padding: 20px 16px;
+    }
+}

@@ -1,0 +1,23 @@
+.video {
+    width: 400px;
+    height: 200px;
+}
+
+.div {
+    width: 400px;
+    height: 200px;
+
+    position: relative;
+    left: 1px;
+
+    color: red;
+}
+
+.container {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 200px;
+
+    overflow: hidden;
+}
